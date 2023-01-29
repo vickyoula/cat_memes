@@ -9,29 +9,19 @@
 <body>
     <h1> Let's Generate A Cat Meme! </h1>
     <br>
-    <br>
     <script>
         function generatePic() {
-
+            <!-- Create cat array }-->
             var cat = new Array();
-<<<<<<< Updated upstream
-            var file_name = document.getElementsByName('file_name[]');
-            for(var i = 0; i< file_name.length; i++){
-                alert(i);
-                var fileUpload = document.getElementById('file_id_'+i);
-                if(fileUpload )
-                    imageContainer.push(fileUpload.files[0]);
-            }
-            cat[0] = "static/pics/IMG_7703.jpg";
-            cat[1] = "static/pics/IMG_7701.jpeg";
-=======
+
 <!--            var file_name = document.getElementsByName('file_name[]');-->
 <!--            for(var i = 0; i< file_name.length; i++){-->
 <!--                alert(i);-->
 <!--                var fileUpload = document.getElementById('file_id_'+i);-->
 <!--                if(fileUpload )-->
 <!--                    imageContainer.push(fileUpload.files[0]);-->
-<!--            }-->
+
+<!-- Array of cats associated with a cat image }-->
             cat[0] = "static/pics/images 1.PNG";
             cat[1] = "static/pics/images 3.PNG";
             cat[2] = "static/pics/images 2.PNG";
@@ -54,15 +44,52 @@
             cat[19] = "static/pics/images 20.PNG";
             cat[20] = "static/pics/images 21.PNG";
             cat[21] = "static/pics/images 22.PNG";
->>>>>>> Stashed changes
-
+            cat[22] = "static/pics/images 23.jpg";
+            cat[23] = "static/pics/images 24.PNG";
+            cat[24] = "static/pics/images 25.PNG";
+            cat[25] = "static/pics/images 26.PNG";
+            cat[26] = "static/pics/images 27.PNG";
+            cat[27] = "static/pics/images 28.jpg";
+            cat[28] = "static/pics/images 29.jpg";
+            cat[29] = "static/pics/images 30.jpg";
+            cat[30] = "static/pics/images 31.jpeg";
+            cat[31] = "static/pics/images 32.JPG";
+            cat[32] = "static/pics/images 33.JPG";
+            cat[33] = "static/pics/images 34.JPG";
+            cat[34] = "static/pics/images 35.JPG";
+            cat[35] = "static/pics/images 36.JPG";
+            cat[36] = "static/pics/images 37.JPG";
+            cat[37] = "static/pics/images 38.JPG";
+            cat[38] = "static/pics/images 39.JPG";
+            cat[39] = "static/pics/images 40.JPG";
+            cat[40] = "static/pics/images 41.JPG";
+            cat[41] = "static/pics/images 42.JPG";
+            cat[42] = "static/pics/images 43.JPG";
+            cat[43] = "static/pics/images 44.JPG";
+            cat[44] = "static/pics/images 45.JPG";
+            cat[45] = "static/pics/images 46.JPG";
+            cat[46] = "static/pics/images 47.JPG";
+            cat[47] = "static/pics/images 48.JPG";
+            cat[48] = "static/pics/images 49.JPG";
+            cat[49] = "static/pics/images 50.JPG";
+            cat[50] = "static/pics/images 51.JPG";
+            cat[51] = "static/pics/52.JPG";
+            cat[52] = "static/pics/53.JPG";
+            cat[53] = "static/pics/54.JPG";
+            cat[54] = "static/pics/55.JPG";
+            cat[55] = "static/pics/56.jpeg";
+            cat[56] = "static/pics/57.JPG";
+            cat[57] = "static/pics/58.JPG";
+            cat[58] = "static/pics/59.JPG";
+            cat[59] = "static/pics/60.JPG";
+            cat[60] = "static/pics/61.JPG";
 
             var index = Math.floor(Math.random() * 22);
             return document.getElementById("result").innerHTML = '<img src="'+cat[index]+'" />';
 
         }
     </script>
-    <button type="button" onclick="generatePic()">Get a Cat</button>
+    <button type="button" onclick="generatePic()">Get a cat right meow</button>
     <br>
     <br>
     <span id="result" align="center"> </span>

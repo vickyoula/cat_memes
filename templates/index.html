@@ -5,11 +5,63 @@
     <title> Cat Meme Generator </title>
     <script src="site.js"></script>
     <style>
+        body {
+            background-color: #fbeee1;
+<!--        background-color: #e5e5f7;-->
+            opacity: 0.8;
+            background-image:  linear-gradient(#edd0c0 1px, transparent 1px), linear-gradient(to right, #edd0c0 1px, #fbeee1 1px);
+            background-size: 40px 40px;
+        }
+
+        h1 {
+        text-align: center;
+        font-family: Bodoni;
+        font-size: 60px;
+        color: #422800;
+        }
+
+
+        .button-74 {
+          background-color: #fbeee0;
+          border: 2px solid #422800;
+          border-radius: 30px;
+          box-shadow: #422800 4px 4px 0 0;
+          color: #422800;
+          cursor: pointer;
+          display: inline-block;
+          font-weight: 600;
+          font-size: 18px;
+          padding: 0 18px;
+          line-height: 50px;
+          text-align: center;
+          text-decoration: none;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+        }
+
+        .button-74:hover {
+          background-color: #fff;
+        }
+
+        .button-74:active {
+          box-shadow: #422800 2px 2px 0 0;
+          transform: translate(2px, 2px);
+        }
+
+        @media (min-width: 768px) {
+          .button-74 {
+            min-width: 120px;
+            padding: 0 25px;
+          }
+        }
         img{
             max-width: 100%;
             max-height: 100%;
-            display: block; /* remove extra space below image */
+            display: block;
+            border-radius: 25px;
         }
+
         .catbox{
             width: 400px;
             max-width: 100%
@@ -17,18 +69,17 @@
             margin-left: auto;
             margin-right: auto;
         }
-<!--        div {-->
-<!--            height: 600px;-->
-<!--            width: 600px;-->
-<!--            background-color: powderblue;-->
-<!--        }-->
+
     </style>
 </head>
 <body>
     <h1> Let's Generate A Cat Meme! </h1>
-    <br>
     <script>
         function generatePic() {
+            const audio = new Audio("static/audio/meow.mp3");
+            audio.play();
+
+
             <!-- Create cat array }-->
             var cat = new Array();
             <!-- Array of cats associated with a cat image }-->
@@ -99,10 +150,13 @@
 
         }
     </script>
-    <button type="button" align="center" onclick="generatePic()">Get a cat right meow</button>
-    <br>
-    <br>
+    <div class="button" align="center">
+        <button class="button-74" role="button" align="center" onclick="generatePic()">Get a cat right meow</button>
+    </div>
+    <br><br>
     <div class="catbox" id="result" align="center"> </div>
+
 
 </body>
 </html>
+

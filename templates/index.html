@@ -14,6 +14,7 @@
         function generatePic() {
 
             var cat = new Array();
+<<<<<<< Updated upstream
             var file_name = document.getElementsByName('file_name[]');
             for(var i = 0; i< file_name.length; i++){
                 alert(i);
@@ -23,8 +24,40 @@
             }
             cat[0] = "static/pics/IMG_7703.jpg";
             cat[1] = "static/pics/IMG_7701.jpeg";
+=======
+<!--            var file_name = document.getElementsByName('file_name[]');-->
+<!--            for(var i = 0; i< file_name.length; i++){-->
+<!--                alert(i);-->
+<!--                var fileUpload = document.getElementById('file_id_'+i);-->
+<!--                if(fileUpload )-->
+<!--                    imageContainer.push(fileUpload.files[0]);-->
+<!--            }-->
+            cat[0] = "static/pics/images 1.PNG";
+            cat[1] = "static/pics/images 3.PNG";
+            cat[2] = "static/pics/images 2.PNG";
+            cat[3] = "static/pics/images 5.PNG";
+            cat[4] = "static/pics/images 4.PNG";
+            cat[5] = "static/pics/images 6.PNG";
+            cat[6] = "static/pics/images 7.PNG";
+            cat[7] = "static/pics/images 8.PNG";
+            cat[8] = "static/pics/images 9.PNG";
+            cat[9] = "static/pics/images 10.PNG";
+            cat[10] = "static/pics/images 11.PNG";
+            cat[11] = "static/pics/images 12.PNG";
+            cat[12] = "static/pics/images 13.PNG";
+            cat[13] = "static/pics/images 14.PNG";
+            cat[14] = "static/pics/images 15.PNG";
+            cat[15] = "static/pics/images 16.PNG";
+            cat[16] = "static/pics/images 17.PNG";
+            cat[17] = "static/pics/images 18.jpg";
+            cat[18] = "static/pics/images 19.PNG";
+            cat[19] = "static/pics/images 20.PNG";
+            cat[20] = "static/pics/images 21.PNG";
+            cat[21] = "static/pics/images 22.PNG";
+>>>>>>> Stashed changes
 
-            var index = Math.floor(Math.random() * 2);
+
+            var index = Math.floor(Math.random() * 22);
             return document.getElementById("result").innerHTML = '<img src="'+cat[index]+'" />';
 
         }

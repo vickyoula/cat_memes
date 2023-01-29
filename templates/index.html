@@ -4,46 +4,35 @@
     <meta charset="UTF-8">
     <title> Cat Meme Generator </title>
     <script src="site.js"></script>
-    <style>
-
-        /* Set display to none for image*/
-        #image {
-            display: none;
-        }
-    </style>
 
 </head>
 <body>
     <h1> Let's Generate A Cat Meme! </h1>
-<!--    <img id = "1" src="static/pics/IMG_7703.jpg">-->
-<!--    <img id = "2" src="static/pics/IMG_7701.jpeg">-->
     <br>
     <br>
-<!--    <input type="submit" value="Get a Cat">-->
-    <button type="button" onclick="generatePic()">Get a Cat</button>
     <script>
         function generatePic() {
 
             var cat = new Array();
-<!--            var file_name = document.getElementsByName('file_name[]');-->
-<!--            for(var i = 0; i< file_name.length; i++){-->
-<!--                alert(i);-->
-<!--                var fileUpload = document.getElementById('file_id_'+i);-->
-<!--                if(fileUpload )-->
-<!--                    imageContainer.push(fileUpload.files[0]);-->
-<!--            }-->
+            var file_name = document.getElementsByName('file_name[]');
+            for(var i = 0; i< file_name.length; i++){
+                alert(i);
+                var fileUpload = document.getElementById('file_id_'+i);
+                if(fileUpload )
+                    imageContainer.push(fileUpload.files[0]);
+            }
             cat[0] = "static/pics/IMG_7703.jpg";
             cat[1] = "static/pics/IMG_7701.jpeg";
-<!--            cat[2]-->
 
             var index = Math.floor(Math.random() * 2);
             return document.getElementById("result").innerHTML = '<img src="'+cat[index]+'" />';
 
-<!--            document.getElementById('index')-->
-<!--                    .style.display = "block";-->
         }
     </script>
-<span id="result" align="center"> </span>
+    <button type="button" onclick="generatePic()">Get a Cat</button>
+    <br>
+    <br>
+    <span id="result" align="center"> </span>
 
 </body>
 </html>
